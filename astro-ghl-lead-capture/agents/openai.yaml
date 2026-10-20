@@ -1,0 +1,4 @@
+interface:
+  display_name: "Astro GoHighLevel Forms"
+  short_description: "Embed responsive GoHighLevel forms in Astro sites"
+  default_prompt: "Use $astro-ghl-lead-capture to add or repair a responsive GoHighLevel lead form in this Astro site."

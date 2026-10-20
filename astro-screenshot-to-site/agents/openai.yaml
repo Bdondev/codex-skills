@@ -1,0 +1,4 @@
+interface:
+  display_name: "Astro Screenshot to Site"
+  short_description: "Build responsive Astro pages from visual references"
+  default_prompt: "Use $astro-screenshot-to-site to implement or refine this Astro page from the supplied visual reference."
