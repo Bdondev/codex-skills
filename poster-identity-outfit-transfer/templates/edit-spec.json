@@ -1,0 +1,50 @@
+{
+  "task": "identity_outfit_transfer_into_base_art",
+  "mode": "edit_existing_image_not_scene_regeneration",
+  "inputs": {
+    "image_a": {
+      "role": "authoritative_base_art",
+      "target_subject": "<which subject should be modified>",
+      "controls": ["composition", "pose", "camera", "unchanged_objects", "style", "environment", "lighting", "typography"]
+    },
+    "image_b": {
+      "role": "authoritative_subject_and_outfit",
+      "controls": ["face", "natural_skin_tone", "hair", "facial_hair", "selected_clothes"],
+      "exclude": ["pose", "studio_background", "reference_lighting", "camera"]
+    }
+  },
+  "replace_only": ["target_face", "target_hair", "target_facial_hair", "target_selected_clothing"],
+  "lock": ["all_other_characters", "vehicle", "props", "background", "composition", "typography", "logos"],
+  "identity": {
+    "source": "image_b",
+    "preserve_visible_anatomy": true,
+    "expression_pose_source": "image_a",
+    "hair_details": "<specific visible braid/part/hairline details>"
+  },
+  "outfit": {
+    "source": "image_b",
+    "garments": ["<jacket>", "<shirt>", "<pants>"],
+    "design_details": ["<only visible, verifiable colors, patches, and lettering>"],
+    "fit_to_base_pose": true
+  },
+  "visual_style": {
+    "source": "image_a",
+    "render_as_native_illustration": true,
+    "match_lighting": true
+  },
+  "geometry": {
+    "pose_source": "image_a",
+    "preserve_hands_and_prop_positions": true,
+    "do_not_add_or_remove_props": true
+  },
+  "delivery": {
+    "aspect_ratio": "<match image_a unless otherwise requested>",
+    "size": "<optional, tool dependent>",
+    "quality_checks": ["identity", "locked_regions", "outfit", "hands", "lighting", "typography"]
+  },
+  "limitations": [
+    "Pixel-perfect preservation is not guaranteed by generative image tools.",
+    "Unknown text or embroidery must not be invented.",
+    "This JSON is a prompt specification, not an executable editing command."
+  ]
+}
