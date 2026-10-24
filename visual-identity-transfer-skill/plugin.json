@@ -1,0 +1,7 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "visual-identity-transfer",
+  "version": "1.0.0",
+  "description": "Reusable image-editing workflows for transferring a person's identity and clothing into existing illustrated posters while preserving the source composition.",
+  "keywords": ["images", "image editing", "identity transfer", "outfit transfer", "poster", "illustration"]
+}
