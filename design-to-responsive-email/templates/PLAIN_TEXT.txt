@@ -1,0 +1,13 @@
+[APPROVED EMAIL SUBJECT — this is ESP metadata, not necessarily HTML title]
+
+[APPROVED CORE HEADLINE]
+
+[APPROVED MESSAGE: concise, understandable without images]
+
+[PRIMARY ACTION LABEL]: [APPROVED ABSOLUTE URL]
+
+[SENDER / VERIFIED IDENTITY]
+[MAILING ADDRESS WHEN REQUIRED]
+[UNSUBSCRIBE URL OR OFFICIALLY VERIFIED ESP TOKEN FOR MARKETING EMAILS]
+
+This file is a draft for the sender's `text/plain` MIME alternative. Confirm actual multipart handling in ESP test deliveries.

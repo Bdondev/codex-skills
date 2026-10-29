@@ -1,0 +1,15 @@
+{
+  "name": "responsive-email-starter",
+  "private": true,
+  "type": "module",
+  "version": "1.2.0",
+  "description": "MJML starter for design-to-responsive-email Codex skill",
+  "scripts": {
+    "validate": "node scripts/validate-mjml.mjs",
+    "build": "mjml src/email.mjml --config.validationLevel strict -o dist/email.html",
+    "visual:qa": "node tests/visual-qa.mjs dist/email.html tests/screenshots"
+  },
+  "devDependencies": {
+    "mjml": "^4.15.3"
+  }
+}

@@ -1,0 +1,1 @@
+Place source photography and decorative assets here for local authoring. Before delivery, upload approved exports to your ESP/CDN and replace local `src` attributes with final absolute URLs or valid ESP-hosted asset references. Do not upload without user authorization.

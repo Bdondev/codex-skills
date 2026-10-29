@@ -1,0 +1,5 @@
+section,filename,source_provenance,extraction_method,asset_role,format,intrinsic_width_px,intrinsic_height_px,display_width_px,source_bytes,alpha_channel,alt_text,hosted_url,status,approval,notes
+hero,hero-artwork.png,unverified,original-or-composite,decorative-composite,png,,,,,,,"",,planned,pending,"EXAMPLE ONLY: Preserve live CTA and offer terms"
+harvest,harvest-bowl.png,unverified,source-crop,separate-illustration,png,,,,,yes,"",,planned,pending,"EXAMPLE ONLY: Bowl with toppings and dressing; need source art"
+harvest,autumn-pumpkin.png,unverified,source-crop,decorative-cutout,png,,,,,yes,"",,planned,pending,"EXAMPLE ONLY: Separate pumpkin"
+harvest,harvest-lower-artwork.png,unverified,optional-composite,decorative-composite,png,,,,,,,"",,optional,pending,"EXAMPLE ONLY: Lower border and bowl only; nutrition and CTA stay HTML"
