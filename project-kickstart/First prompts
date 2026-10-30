@@ -1,0 +1,13 @@
+$project-kickstart Audit this repository, 
+identify the project requirements, evaluate the existing architecture,
+and propose the initial setup. Phase 1 only. 
+Do not modify files.
+
+$project-kickstart Perform Phase 1 only.
+Audit this repository and propose the project setup.
+Do not modify any files.
+
+$project-kickstart Proceed with Phase 2.
+Apply only the documentation and skill setup
+changes approved in the previous plan.
+Do not begin implementation.
