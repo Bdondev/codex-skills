@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify Before Done"
+  short_description: "Prove coding tasks with tests and evidence"
+  default_prompt: "Use $verify-before-done on my current changes. Define acceptance criteria, run relevant checks, capture evidence, and report VERIFIED/PARTIAL/BLOCKED without inventing results."
