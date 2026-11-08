@@ -1,4 +1,0 @@
-interface:
-  display_name: "Verify Before Done"
-  short_description: "Risk-based LIGHT, STANDARD or DEEP code verification"
-  default_prompt: "Use $verify-before-done on my current changes. Auto-select LIGHT, STANDARD, or DEEP based on scope and risk, run only relevant checks, provide actual evidence, and report VERIFIED/PARTIAL/BLOCKED."
