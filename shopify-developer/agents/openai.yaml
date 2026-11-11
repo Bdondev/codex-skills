@@ -1,0 +1,5 @@
+interface:
+  display_name: Shopify Developer
+  short_description: Build and audit Shopify themes, apps and extensions
+  default_prompt: Use $shopify-developer to audit this Shopify project, choose the correct customization surface, implement only my
+    requested change, run relevant checks, and report verified results and remaining risks.
