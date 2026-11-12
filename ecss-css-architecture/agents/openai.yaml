@@ -1,0 +1,4 @@
+interface:
+  display_name: "ECSS CSS Architecture"
+  short_description: "Audit and build maintainable responsive CSS"
+  default_prompt: "Use $ecss-css-architecture to inspect the relevant CSS, preserve my stack and tokens, make only the requested changes, and report actual checks and remaining risks."
