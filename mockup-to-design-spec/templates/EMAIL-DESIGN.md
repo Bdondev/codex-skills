@@ -1,0 +1,12 @@
+# Email design specification
+- Source references and section spec links:
+- Message type / audience / locale:
+- Layout framework / template engine / ESP / preview runtime:
+- Reference width vs proposed email width:
+- Subject and preheader (provided/proposed/unknown):
+- Live text, assets, mobile stacking and Outlook fallbacks:
+- Dark mode, image-off, accessibility and plain-text:
+- Footer, unsubscribe/preferences, sender address and tracking requirements:
+- Dynamic content contract: [DYNAMIC-CONTENT.md](DYNAMIC-CONTENT.md)
+- QA plan: [EMAIL-QA.md](EMAIL-QA.md)
+- Unknowns and approvals:
