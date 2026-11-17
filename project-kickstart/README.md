@@ -4,10 +4,10 @@ A portable, instruction-only agent skill for **starting or restarting a web deve
 
 ## Contents
 
-- `SKILL.md` — small orchestration and the two-phase gate
+- `SKILL.md` — small orchestration, two-phase gate, and conditional design/platform routing
 - `references/` — detailed audit, architecture, guidance-layering and handoff procedures
 - `templates/` — optional starting points for `AGENTS.md`, `CLAUDE.md`, project brief and plan
-- `tests/manual-evaluation.md` — six scenarios for assessing skill behavior
+- `tests/manual-evaluation.md` — seven scenarios for assessing skill behavior
 
 ## Install on your Mac
 
@@ -59,4 +59,4 @@ The `SKILL.md` file is tool-neutral: there are no vendor-exclusive fields or exe
 
 ## Version
 
-1.0 — 2026-10-30. No repository was modified or agent runtime was executed to create this download.
+1.1 — 2026-11-16. Adds conditional routing to mockup-to-design-spec and the narrowest WordPress, Shopify, Astro, or email builder while preserving the two-phase gate and project-specific instructions.

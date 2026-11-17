@@ -43,3 +43,5 @@ python3 .agents/skills/verify-before-done/scripts/audit_checks.py \
 ```
 
 Logs might contain confidential information; review before uploading, sharing, or committing. A passing command never independently proves the feature correct. The skill does not authorize production operations.
+
+Approved design references and section acceptance criteria are consumed as required gates. Existing evidence may be reused when it still matches the current scope and inputs; untested functionality is never reported as passing.

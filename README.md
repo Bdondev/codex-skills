@@ -27,6 +27,24 @@ The installer verifies that each selected skill is available through both agent 
 
 An all-skills run may still install every unambiguous skill, but returns a non-zero status when it reports a conflict so the conflict cannot be missed.
 
+## Validate every skill
+
+Create the reusable, Git-ignored validation environment once, then run the official validator against every discovered skill:
+
+```sh
+python3 -m venv .skill-validation-venv
+.skill-validation-venv/bin/python -m pip install PyYAML
+set -eu -o pipefail
+find . -type f -name SKILL.md -not -path './.git/*' -print0 |
+while IFS= read -r -d '' skill_file; do
+  .skill-validation-venv/bin/python \
+    "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" \
+    "$(dirname "$skill_file")"
+done
+```
+
+The environment is excluded by `.gitignore`. This checks skill frontmatter and scaffold invariants; run each skill's existing tests and inspect real platform, browser, CMS, store, ESP, and inbox integrations separately.
+
 ## Update
 
 ```sh

@@ -9,6 +9,7 @@
 - If Playwright is configured, run targeted tests with the project's runner (`npx playwright test` is a typical example). Verify affected route(s), CTA links, mobile overflow, focus navigation, and interactive elements.
 - For pixel-accurate tasks, compare *approved* references at 1440px and 390px, matching viewport height, fonts, assets, and content. Avoid silently replacing baselines.
 - Record build or JavaScript console errors separately from visual differences.
+- For changed Astro components, verify props/slots and rendered states, client directives or hydration behavior when used, and each affected route; do not treat a static build as proof of browser behavior.
 
 ## Shopify themes (Liquid + JSON templates)
 
@@ -25,12 +26,23 @@
 - Render affected templates in the **local/staging** WordPress environment if permitted; test missing fields, empty content, escaping and sanitization, and responsive layouts where relevant.
 - If using ACF Free, verify the expected fields actually exist in that environment; do not assume a premium feature is available.
 - Don't modify production WordPress content, DB, plugin installation, or live settings just to make a test pass.
+- For CMS editing changes, verify the affected editor fields, block/template controls, previews, empty/missing content, escaping/sanitization, and the resulting front-end render in local/staging. Do not claim editor or content workflows pass from PHP lint alone.
+
+## Shopify theme editor
+
+- Verify changed JSON templates/section schemas, setting defaults, presets, blocks, and merchant-editable states in the theme editor or an authorized local preview.
+- Check that editor changes render on the affected storefront route without publishing or mutating a live theme; mark editor/runtime integration **BLOCKED** when no authorized preview exists.
 
 ## Responsive HTML email
 
 - Verify changed copy and links, table structure, alt text, mobile layout, and relevant ESP merge tags.
 - Test representative clients (Gmail/Outlook/Apple Mail) through Litmus/Email on Acid or equivalent *when available*; generic browser rendering cannot establish inbox-client compatibility.
 - When no cross-client tool is available, report email-client compatibility checks as **BLOCKED**, not PASS.
+
+## Dynamic ESP content
+
+- Preserve and validate the target ESP's merge tags, conditional branches, escaping rules, fallback values, and whitespace/URL behavior using representative fixtures.
+- Inspect the compiled or ESP-transformed output when available. A browser preview or source-template lint does not prove dynamic rendering; unavailable ESP execution or inbox-client checks are **BLOCKED**.
 
 ## Common checks for UI development
 

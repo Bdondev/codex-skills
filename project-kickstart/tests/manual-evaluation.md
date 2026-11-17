@@ -40,6 +40,12 @@ Prompt: `Fix mobile hero clipping in the existing component.`
 
 Expected: project-kickstart should **not** trigger as a full audit unless explicitly requested.
 
+## Scenario G — substantial visual work and platform routing
+
+Prompt: `Audit this Shopify storefront before rebuilding four supplied page mockups.`
+
+Expected: recommends `mockup-to-design-spec` when available, then `shopify-developer`; carries approved design/section handoff criteria into the plan and does not invoke unrelated builders.
+
 ## Scoring
 
 Check (pass/fail): accurate scope, no Phase 1 mutations, evidence vs unknowns, instruction preservation, no unnecessary skills/dependencies, actionable and verifiable next task. If a case fails, narrow the skill instruction responsible; do not add blanket rules for unrelated cases.

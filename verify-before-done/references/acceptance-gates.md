@@ -2,7 +2,7 @@
 
 ## Matrix (fill before declaring completion)
 
-First auto-select LIGHT, STANDARD, or DEEP using [risk-based levels](verification-levels.md). Use the smallest relevant set of gates and retain any mandatory project or user checks.
+First auto-select LIGHT, STANDARD, or DEEP using [risk-based levels](verification-levels.md). Import approved design references and section acceptance criteria into the matrix before adding checks. Use the smallest relevant set of gates and retain any mandatory project or user checks.
 
 | ID | Requirement | Observable acceptance | How verified | Required | Status | Evidence |
 |---|---|---|---|---|---|---|
@@ -22,6 +22,7 @@ Never copy example rows as if they were real test results. Replace them with tas
 | Shopify theme | Theme Check; Liquid/schema validation; preview behavior for affected pages if permitted; desktop/mobile checks |
 | WordPress theme | Changed PHP syntax lint; project build; local render of affected template if available; browser tests |
 | Responsive HTML email | Markup validation where available; desktop/mobile visual inspection; actual email-client tests where available; unresolved client gaps disclosed |
+| Dynamic ESP content | Validate merge tags, conditionals, fallback content, and representative data fixtures in the target ESP/compiler; report unavailable runtime or client checks as BLOCKED |
 | Deploy/production configuration | Explicit authorization; environment safety and rollback review; post-change smoke tests (only if authorized) |
 
 ## Status rules
