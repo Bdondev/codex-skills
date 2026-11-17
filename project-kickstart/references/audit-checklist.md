@@ -18,6 +18,7 @@ Use the minimum safe commands needed for the active environment. File-system ins
 - Existing docs: `README.md`, `AGENTS.md`, `CLAUDE.md`, nested guidance, design systems, implementation notes.
 - Existing workflows: available build, lint, test, preview, visual QA, and deployment scripts. **Do not run them during initial discovery unless clearly safe and useful.**
 - For a truly empty directory, record absent repo/manifests/assets rather than interpreting their absence as mistakes.
+- Identify canonical brief, plan, design, progress, decision, architecture and QA records (including issue trackers); inspect only relevant evidence. Recommend the minimum useful documentation set using [documentation-policy.md](documentation-policy.md).
 
 ## Domain-specific checks
 

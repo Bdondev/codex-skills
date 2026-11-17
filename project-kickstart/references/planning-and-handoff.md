@@ -10,7 +10,7 @@ Use this report structure, scaled to project complexity:
 4. **Architecture decision:** recommended approach, specific reasons, trade-offs, if migration is proposed why.
 5. **Instruction audit:** current `AGENTS.md`/`CLAUDE.md`, skill inventory, conflicts/duplication, necessary changes.
 6. **Milestones:** each milestone has a deliverable, pass/fail acceptance criteria, and verification method.
-7. **Proposed setup changes:** exact file paths; mark create/update/unchanged, and why.
+7. **Proposed setup changes:** exact file paths; mark create/update/reuse/omit, and why. Include the documentation level, existing canonical equivalents and proposed maintenance scope using [documentation-policy.md](documentation-policy.md).
 8. **Gate:** explicitly request approval of Phase 2; implementation remains out of scope.
 
 ## Milestone examples (customize; do not force)
@@ -34,6 +34,7 @@ Use the smallest vertical slice that proves the stack and design approach. Inclu
 - Responsive/accessibility expectations.
 - Checks to run and what evidence to provide.
 - Explicit exclusions (e.g., do not change unrelated sections).
+- Relevant canonical documentation paths and any approved maintenance responsibilities.
 
 ## Phase 2 handoff
 

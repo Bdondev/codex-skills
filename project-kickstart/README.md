@@ -5,9 +5,20 @@ A portable, instruction-only agent skill for **starting or restarting a web deve
 ## Contents
 
 - `SKILL.md` — small orchestration, two-phase gate, and conditional design/platform routing
-- `references/` — detailed audit, architecture, guidance-layering and handoff procedures
-- `templates/` — optional starting points for `AGENTS.md`, `CLAUDE.md`, project brief and plan
-- `tests/manual-evaluation.md` — seven scenarios for assessing skill behavior
+- `references/` — detailed audit, architecture, guidance-layering, documentation policy and handoff procedures
+- `templates/` — optional starting points for `AGENTS.md`, `CLAUDE.md`, project brief, plan, architecture, progress, decisions and QA checklist
+- `tests/manual-evaluation.md` — twelve scenarios for assessing skill behavior
+- `First prompts` — example invocations
+
+## Documentation selection (v1.2)
+
+| Level | Suggested set (reuse equivalents) |
+| --- | --- |
+| Lightweight | README or brief; plan if needed |
+| Standard | Brief, plan, progress and QA where useful |
+| Extended | Standard plus architecture and decisions where useful |
+
+The skill proposes exact files during Phase 1 and creates only those approved during Phase 2. Existing design specs, email docs, issue trackers and other equivalent records remain canonical. Optional documentation is not automatically mandatory. `AGENTS.md` or `CLAUDE.md` can index relevant files by task instead of demanding that every document be read. Ongoing maintenance must be explicitly approved. See [documentation-policy.md](references/documentation-policy.md).
 
 ## Install on your Mac
 
@@ -29,21 +40,23 @@ mkdir -p "$HOME/.claude/skills"
 
 **Project-scoped alternative:** install the folder at `<repo>/.agents/skills/project-kickstart` for Codex or `<repo>/.claude/skills/project-kickstart` for Claude Code. If using both agents, install an identical copy to each relevant location. Avoid copying it into each repo if your personal installation already covers your needs.
 
+**Upgrade from v1.1:** compare the extracted folder against the existing repository's `project-kickstart/` folder. Merge any local customizations, then update that folder with the extracted contents. Review the diff before committing or using your repository's existing installation/update workflow. Do not replace other skills.
+
 ## Invoke it
 
 **Codex:**
 
 ```text
-$project-kickstart Audit this repository and propose the setup plan. Phase 1 only: read-only, no changes.
+$project-kickstart Audit this repository and propose the setup plan and minimum useful documentation set. Phase 1 only: read-only, no changes.
 ```
 
 **Claude Code:**
 
 ```text
-/project-kickstart Audit this repository and propose the setup plan. Phase 1 only: read-only, no changes.
+/project-kickstart Audit this repository and propose the setup plan and minimum useful documentation set. Phase 1 only: read-only, no changes.
 ```
 
-After reviewing the audit, expressly authorize **Phase 2 documentation changes only** and specify Codex, Claude Code, or both. The skill then updates only approved files and stops before actual implementation.
+After reviewing the audit, expressly authorize **Phase 2 documentation changes only** and specify the intended agent instruction file and maintenance scope if applicable. The skill then updates only approved files and stops before actual implementation.
 
 ## Why it is designed this way
 
@@ -59,4 +72,4 @@ The `SKILL.md` file is tool-neutral: there are no vendor-exclusive fields or exe
 
 ## Version
 
-1.1 — 2026-11-16. Adds conditional routing to mockup-to-design-spec and the narrowest WordPress, Shopify, Astro, or email builder while preserving the two-phase gate and project-specific instructions.
+1.2.0 — 2026-11-17. Adds complexity-based documentation and maintenance policy while preserving the 1.1 two-phase gate, platform routing and project-specific instructions.

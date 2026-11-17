@@ -31,7 +31,7 @@ Do not assume that Codex loads `.claude/skills` or Claude loads `.agents/skills`
 4. Avoid duplicated rules and generic boilerplate. Resolve contradictory instructions visibly.
 5. Make minimal, section-level edits; never replace the file wholesale without explicit authorization.
 6. Do not repeatedly rewrite instructions during individual component/section tasks unless requirements changed.
-7. Reference long docs or relevant skills rather than embedding their entire contents.
+7. Reference long docs or relevant skills rather than embedding their entire contents. Map tasks to existing canonical docs; never instruct the agent to load all documentation before every task. See [documentation-policy.md](documentation-policy.md).
 
 ## Skill creation threshold
 

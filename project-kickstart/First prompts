@@ -11,3 +11,7 @@ $project-kickstart Proceed with Phase 2.
 Apply only the documentation and skill setup
 changes approved in the previous plan.
 Do not begin implementation.
+
+$project-kickstart Perform Phase 1 only. Audit this repository and recommend the smallest useful documentation set. Reuse existing docs, identify canonical paths, and propose optional progress, decisions, architecture and QA records only where justified. Do not modify files.
+
+$project-kickstart Proceed with Phase 2. Apply only the exact documentation and agent-instruction changes approved in the plan, including the maintenance scope if approved. Do not start implementation, install dependencies, commit or deploy.

@@ -23,6 +23,11 @@
 - Report what was tested, results, and anything unverified.
 
 ## Further guidance
-- Project brief: [path if created]
-- Project plan: [path if created]
+- Planning: [existing brief / plan paths, if applicable]
+- Design and UI: [existing design / section spec paths, if applicable]
+- Architecture and decisions: [canonical paths, if applicable]
+- Resuming work: [progress record or issue tracker, if applicable]
+- QA: [canonical checklist or evidence path, if applicable]
+- Read only the documents relevant to the task. Omit pointers to nonexistent files.
+- Documentation maintenance: [approved scope and material-update triggers; omit if not approved]
 - Skills: use available skills for detailed procedures; do not duplicate their instructions here.
