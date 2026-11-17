@@ -1,5 +1,5 @@
 ---
-name: poster-identity-outfit-transfer
+name: visual-identity-transfer
 description: Edit an existing poster, key art, or cinematic illustration by transferring a person's recognizable facial identity, hair, skin tone, and optional outfit from a second reference while preserving the base composition, pose, characters, environment, logos, and art style. Use for GTA-inspired game posters, editorial artwork, character replacements, reference-guided face and clothing transfers, and localized anatomy corrections.
 ---
 
