@@ -14,7 +14,8 @@ Build and refine Shopify implementations using the **existing repository and mer
 3. Classify the customization surface: **Online Store theme / cart / app / theme app extension / Checkout UI extension / Shopify Function / customer account extension / Web Pixel / Admin API / Storefront API / Hydrogen**. Read only the relevant reference below.
 4. Identify version-sensitive APIs and feature entitlements; confirm them against actual dependencies, store configuration, and current official documentation. When access is missing, state what cannot be verified.
 5. For mockup-based work, inventory approved sections, branding, assets, responsive references, editing needs and uncertainty; keep missing inputs separate from observed facts. Do not invent fonts, product details, colors, images, URLs, promotions or merchant data.
-6. Choose the least invasive architecture. Preserve already-implemented behavior, and document a scoped plan. If the request is an audit-only pass, stop after findings; if a section or fix was explicitly requested, implement that scope.
+6. If the task is explicitly design-to-theme work and approved `mockup-to-design-spec` v2.0 outputs exist, follow `references/design-to-theme.md`. Consume the approved `docs/DESIGN.md`, relevant section spec, `docs/ASSET-INVENTORY.md` and `docs/IMPLEMENTATION.md` as inputs; do not regenerate, overwrite or duplicate them. This workflow is opt-in and does not apply to unrelated app, API, extension, cart or theme-maintenance tasks.
+7. Choose the least invasive architecture. Preserve already-implemented behavior, and document a scoped plan. If the request is an audit-only pass, stop after findings; if a section or fix was explicitly requested, implement that scope.
 
 ## 2. Implement one verified slice
 
@@ -42,6 +43,7 @@ Build and refine Shopify implementations using the **existing repository and mer
 | Task | Reference |
 | --- | --- |
 | Theme files, Liquid, blocks, schema, snippets, metafields/metaobjects | [theme-liquid](references/theme-liquid.md) |
+| Approved mockup-to-theme implementation | [design-to-theme](references/design-to-theme.md) |
 | Cart drawer, variant controls, JavaScript, CSS, editor lifecycle | [storefront-interactions](references/storefront-interactions.md) |
 | SEO, speed, accessibility, responsive media, localization/Markets | [commerce-experience](references/commerce-experience.md) |
 | Apps, APIs, checkout, Functions, account extensions, Web Pixels | [apps-extensions](references/apps-extensions.md) |

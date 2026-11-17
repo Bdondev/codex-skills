@@ -20,6 +20,7 @@ Use for initial assessment, bug fixes, implementation, releases and audits. Adju
 - Test navigation, forms, cart, search, dynamic checkout, mobile drawer, language/country selectors, and app integration.
 - For design implementation compare screenshot at 1440px and 390px, using supplied mockups/assets as ground truth; test other relevant widths and longer translated content. Confirm no horizontal overflow, clipping or keyboard traps.
 - Run accessibility checks and keyboard/manual testing. Capture Lighthouse/Core Web Vitals where tools permit; use measured deltas only.
+- For approved mockup-to-design-spec v2.0 work, reuse the section acceptance criteria and mapping from `references/design-to-theme.md`. Verify theme-editor settings/blocks, dynamic sources, product variants and empty states in addition to visual comparison; a static render cannot prove those behaviors.
 
 ## App/extension QA
 

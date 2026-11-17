@@ -11,6 +11,8 @@ Use when the task involves Online Store themes, JSON templates, Liquid, schema, 
 - Follow existing theme conventions and support editor-specific `block.shopify_attributes` and section settings where relevant.
 - Separate generated CSS/JS source from compiled theme assets. Avoid altering merchant-managed `config/settings_data.json` unintentionally.
 
+For approved mockup-to-design-spec v2.0 work, use `references/design-to-theme.md` to record the visual-section-to-Liquid mapping, editable settings, dynamic data model, token ownership and JSON-template placement before implementing the requested slice.
+
 ## Liquid rules
 
 - Use supported Liquid constructs and objects only. Guard optional resources with `!= blank`, `== nil`, `== empty`, or more appropriate documented checks; `present` is not a verified Shopify Liquid keyword. Remember empty strings can be truthy.
