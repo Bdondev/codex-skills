@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 — 2026-11-16
+
+- Reuse approved design specifications; add dynamic implementation gate, engine-specific runtime selection, fixture testing, native tag preservation and separate portfolio output. Preserve existing scripts and tests.
+
+
 ## 1.2.0 — 2026-10-29
 
 - Incorporated the user's full **HTML Email Development Agent Instructions — 2026 Edition** without blindly duplicating rules.

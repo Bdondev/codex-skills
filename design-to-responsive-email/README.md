@@ -107,3 +107,7 @@ design-to-responsive-email/
 │   └── assets/README.md
 └── tests/                    # Node unit tests for the above auditors
 ```
+
+## Dynamic email and design handoff (v1.3)
+
+Reuse approved mockup-to-design-spec outputs. For dynamic work see `references/dynamic-email-workflow.md`; keep ESP-native production output separate from synthetic portfolio previews.

@@ -28,3 +28,12 @@ Date / owner:
 - [ ] Verify actual MIME plain-text alternative, subject/from/preheader metadata and image-disabled reading.
 
 Release decision: BLOCKED / NEEDS QA / READY (approved by owner)
+
+## Dynamic build contract
+
+- Layout framework / engine / ESP / preview runtime:
+- Compile and render order / token survival assertions:
+- Production and synthetic preview paths / commands:
+- Field sources, types, fallback, escaping and URL validation:
+- Fixture results: missing, null, empty, long, Unicode, special characters, zero/false, list 0/1/max/over-max:
+- Native preview/test delivery evidence and blocked checks:

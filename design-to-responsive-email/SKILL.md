@@ -17,12 +17,18 @@ Convert approved email designs into maintainable inbox-oriented HTML. Use an **a
 4. Preserve already-approved sections and working assets; do not overwrite user originals. **No commits, sending, publishing, or ESP automation changes unless requested.**
 5. End every stage with changed files, evidence/tests run, observed deviations, remaining risks, and the next logical gate. Never claim 'production-ready' without required real-inbox and ESP checks.
 
+## Design specification handoff
+
+- Reuse approved `docs/DESIGN.md` or equivalent, relevant section specs, original images, asset inventory, implementation plan, and `EMAIL-DESIGN.md`, `DYNAMIC-CONTENT.md`, `EMAIL-QA.md`. Map legacy filenames to equivalents; retain CSV manifests needed by tools as derived views. Do not regenerate approved documents.
+- If substantial analysis is needed and no spec exists, use `mockup-to-design-spec` when available and authorized; otherwise Gate A. Skip full audits for routine edits. Resolve contradictions with the user.
+- On first setup only, create or merge concise AGENTS.md if authorized and needed; preserve existing rules and do not repeat setup on section tasks.
+
 ## Gate A — Design audit (stop before coding)
 
 - Inventory designs at all provided breakpoints, approved copy/links, original design layers, source photographs, branding, ESP, target audience/clients. If there is only a low-resolution 225px-wide screenshot, it is a layout reference, not reliable production photography.
 - Build a numbered section map: live heading/body, decorative image(s), composition and overlap, desired order on mobile, email-safe layout treatment, images-off behavior, expected interactions, uncertainty.
 - Default desktop wrapper **approximately 600px**; responsive/fluid at 390 and 320px. Record as a proposed starting point, not a measured source value.
-- Create `docs/CAMPAIGN_BRIEF.md`, `docs/DESIGN_SPEC.md`, `docs/ASSET_MANIFEST.csv`, `docs/ACCEPTANCE_CRITERIA.md`, and `docs/SECTION_BUILD_PLAN.md` from `templates/`. Merge `templates/AGENTS.email.md` into existing project rules rather than replacing them.
+- If equivalent approved documents are absent, create `docs/CAMPAIGN_BRIEF.md`, `docs/DESIGN_SPEC.md`, `docs/ASSET_MANIFEST.csv`, `docs/ACCEPTANCE_CRITERIA.md`, and `docs/SECTION_BUILD_PLAN.md` from `templates/`. Merge `templates/AGENTS.email.md` into existing project rules rather than replacing them.
 - Label findings as `Provided`, `Observed`, `Proposed`, or `Missing/Needs confirmation`. If the task is a planning pass, stop and report blockers. Reference `templates/CODEX_PROMPTS.md` stage 1.
 
 ## Gate B — Prepare and slice assets (before build)
@@ -54,6 +60,10 @@ For each visual, decide **LIVE HTML**, **SEPARATE IMAGE**, **DECORATIVE COMPOSIT
 - Implement only the named section, keeping previously completed sections stable. Compile, lint, then visually inspect browser at **320, 390, and 600px** (plus desktop 1440px for full context) if browser tooling exists. Report mismatch with screenshot and expected Outlook risks; **stop** after the named section and don't commit.
 - Don't force exact decorative overlap at the expense of real inbox compatibility. Document any intentional visual compromise.
 - Use section prompt stage 5 and `templates/SECTION_QA.md`.
+
+## Dynamic implementation gate (when requested)
+
+Read `references/dynamic-email-workflow.md` and `templates/ESP_INTEGRATION.md`. Select layout framework, engine, ESP and preview runtime independently. Consume the approved dynamic contract; verify native syntax and compile/render order. Implement only the requested module, preserve native tokens, and produce separate production and synthetic portfolio preview artifacts. Test required data states and rendered HTML. Native ESP QA is separate from local rendering; stop before upload/send unless authorized.
 
 ## Gate E — Automated browser checks + client QA
 
@@ -89,5 +99,6 @@ For each visual, decide **LIVE HTML**, **SEPARATE IMAGE**, **DECORATIVE COMPOSIT
 | Modules/client issue | `references/module-and-debugging.md`, `templates/DEBUGGING_PLAYBOOK.md` |
 | Buttons | `references/button-patterns.md` |
 | ESP/personalization | `references/esp-and-compiled-output.md`, `templates/ESP_INTEGRATION.md` |
+| Dynamic implementation / portfolio | `references/dynamic-email-workflow.md` |
 
 Source scope and changes: `references/source-notes.md` and `CHANGELOG.md`.
